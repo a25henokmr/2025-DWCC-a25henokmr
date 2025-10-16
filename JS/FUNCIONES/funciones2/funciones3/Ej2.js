@@ -2,6 +2,7 @@
 
 const array = [2, 4, 3, 4, 5, 8, 8, 9, 2, 3];
 
+const lowest = array.reduce((acc, valor) => (acc < valor ? acc : valor));
 function reducer(min, currentValue) {
   if (currentValue < min) {
     min = currentValue;
